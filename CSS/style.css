@@ -1,0 +1,183 @@
+/* ########## Header Section Start ########## */
+/* ########## Header Section End ########## */
+
+
+/* ########## Hero Section Start ########## */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero_text > h1{
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--secondary-color);
+}
+.hero_text > p{
+    margin: 16px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.hero_img{
+    width: 440px;
+    height: 414px;
+}
+.primary_btn{
+    border-radius: 41px;
+}
+/* ########## Hero Section End ########## */
+
+
+/* ########## Logo Section Start ########## */
+/* ########## Logo Section End ########## */
+
+/* ########## Product Section Start ########## */
+.all_products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.product{
+    width: 330px;
+    height: 475px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 16px;
+}
+.product_thumbnail{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+.product_details{}
+.product_title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--secondary-color);
+}
+.product_pricing{
+    margin-top: 6px;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+}
+.ratting{
+    align-items: center;
+    margin-bottom: 6px;
+}
+.ratting > div > .fas{
+    color: #FB8200;
+    font-size: 12px;
+}
+.ratting > span{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Roboto;
+    color: #5E6366;
+    margin-left: 8px;
+}
+.product_details > p{
+    color: #787885;
+    font-size: 15px;
+    line-height: 143%;
+}
+.see_more{
+    margin-top: 50px;
+    display: grid;
+    justify-content: flex-end;
+}
+.see_more > a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px
+}
+/* ########## Product Section End ########## */
+
+
+/* ########## Feature Section Start ########## */
+/* ########## Feature Section End ########## */
+
+
+/* ########## Contact Section Start ########## */
+.contact{}
+.map{}
+.form{
+    margin-left: 40px;
+    width: 100%;
+}
+.form input{
+    display: block;
+    margin-bottom: 16px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    color: var(--primary-color);
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+}
+.form textarea{
+    padding: 10px;
+    color: var(--primary-color);
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+.form input:focus, .form textarea:focus{
+    box-shadow: 0 0 20px 2px #e02c6e52;
+}
+.form_btn{
+    border-radius: 30px;
+    margin-top: 10px;
+}
+/* ########## Contact Section End ########## */
+
+
+/* ########## Footer Section Start ##########  */
+footer{
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--dark);
+    padding: 50px 0;
+}
+footer > h3{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+footer > p{
+    font-size: 14px;
+    line-height: 24px;
+}
+footer > .social_link ul{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+.social_link li{
+    list-style: none;
+    margin-left: 20px;
+    background-color: #22213C;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    color: #ffffff0e;
+}
+.social_link li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding: 5px;
+}
+/* ########## Footer Section End ########## */
