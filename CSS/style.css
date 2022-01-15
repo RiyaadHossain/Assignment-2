@@ -1,4 +1,18 @@
 /* ########## Header Section Start ########## */
+header{
+    display: flex;
+    justify-content: start;
+    padding: 2% 0;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
 /* ########## Header Section End ########## */
 
 
@@ -221,6 +235,9 @@ footer > .social_link ul{
     section{
         padding: 6% ;
     }
+    header{
+        padding: 1% 6%;
+    }
     .hero{
         flex-direction: column;
         justify-content: center;
@@ -308,6 +325,9 @@ footer > .social_link ul{
     section{
         padding: 6% ;
     }
+    header{
+        padding: 1% 6%;
+    }
     .hero_img{
         display: flex;
         align-items: center;
@@ -339,6 +359,9 @@ footer > .social_link ul{
 @media only screen and (min-width:993px) and (max-width:1130px) {
     section{
         padding: 7% ;
+    }
+    header{
+        padding: 1% 6%;
     }
     .all_logos{
         grid-template-columns: repeat(4, 1fr);
