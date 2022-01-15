@@ -40,10 +40,6 @@ section{
     display: flex;
 }
 
-.justify_center{
-    justify-content: center;
-}
-
 .btn{
     background: #E02C6D;
     padding: 10px 20px;

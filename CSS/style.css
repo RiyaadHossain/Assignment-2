@@ -331,7 +331,6 @@ footer > .social_link ul{
         flex-direction: column;
     }
     .contact{
-        /* flex-direction: column; */
         text-align: center;
     }
 }
