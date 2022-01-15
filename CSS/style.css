@@ -6,7 +6,11 @@
 .hero{
     display: flex;
     align-items: center;
+    column-gap: 4rem;
     justify-content: space-between;
+}
+.hero_text{
+    width:62%;
 }
 .hero_text > h1{
     font-weight: bold;
@@ -22,7 +26,7 @@
     font-weight: 500;
 }
 .hero_img{
-    width: 440px;
+    width:38%;
     height: 414px;
 }
 .primary_btn{
@@ -32,6 +36,13 @@
 
 
 /* ########## Logo Section Start ########## */
+.all_logos{
+    padding: 22px 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 4em;
+    text-align: center;
+}
 /* ########## Logo Section End ########## */
 
 /* ########## Product Section Start ########## */
@@ -47,12 +58,11 @@
     border-radius: 5px;
     padding: 16px;
 }
-.product_thumbnail{
+.product_thumbnail img{
     width: 300px;
     height: 256px;
     margin-bottom: 16px;
 }
-.product_details{}
 .product_title{
     font-weight: 500;
     font-size: 28px;
@@ -102,15 +112,36 @@
 
 
 /* ########## Feature Section Start ########## */
+.feature{
+    align-items: center;
+    column-gap: 3em;
+}
+.feature_img img{
+    width: 404px;
+    height: 270px;  
+}
+.feature_text > h3{
+    font-weight: bold;
+    font-size: 38px;
+}
+.feature_text > p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 16px 0;
+}
 /* ########## Feature Section End ########## */
 
 
 /* ########## Contact Section Start ########## */
-.contact{}
-.map{}
+.contact{
+    column-gap: 3em;
+}
+.map{
+    width: 50%;
+}
 .form{
-    margin-left: 40px;
-    width: 100%;
+    width: 50%;
 }
 .form input{
     display: block;
@@ -119,13 +150,11 @@
     outline: none;
     width: 100%;
     border-radius: 5px;
-    color: var(--primary-color);
     font-size: 16px;
     border: 1px solid var(--primary-color);
 }
 .form textarea{
     padding: 10px;
-    color: var(--primary-color);
     font-size: 16px;
     outline: none;
     resize: none;
@@ -172,7 +201,7 @@ footer > .social_link ul{
     height: 32px;
     width: 32px;
     line-height: 32px;
-    color: #ffffff0e;
+    color: hsla(0, 0%, 100%, 0.055);
 }
 .social_link li a{
     text-decoration: none;
@@ -181,3 +210,154 @@ footer > .social_link ul{
     padding: 5px;
 }
 /* ########## Footer Section End ########## */
+
+
+
+
+/* ------------------ Media Queries ------------------ */
+
+/* Mobile Devices */
+@media screen and (max-width: 687px) {
+    section{
+        padding: 6% ;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container{
+        padding-bottom: 14%;
+        width: 100%;
+    }
+    .hero_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 240px;
+    }
+    .hero_img img{
+        width: 202px;
+        height: 190px;
+        object-fit: cover;
+    }
+    .hero_text > h1{
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .hero_text > p{     
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+    .primary_btn{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        padding:4px 12px;
+        margin-left: 52px;
+    }
+    .all_logos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .logo img{
+        width: 51.17px;
+        height: 15.24px;
+    }
+    .all_products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature{
+        flex-direction: column;
+    }
+    .feature_img img{
+        width: 299px;
+        height: 188px;
+    }
+    .feature_text h3{
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    .feature_text p{
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .contact{
+        flex-direction: column;
+        text-align: center;
+    }
+    .map{
+        margin-bottom: 30px;
+        width: 90%;
+    }
+    .form{
+        width: 90%;
+    }
+    .form input, .form textarea{
+        display: inline-block;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    section{
+        padding: 6% ;
+    }
+    .hero_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero_img > img{
+       width: 220px;
+       height: 200px; 
+       object-fit: cover;
+    }
+    .all_logos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .all_products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .feature{
+        text-align: center;
+        flex-direction: column;
+    }
+    .contact{
+        /* flex-direction: column; */
+        text-align: center;
+    }
+}
+
+/* Big Tablet Devices */
+@media only screen and (min-width:993px) and (max-width:1130px) {
+    section{
+        padding: 7% ;
+    }
+    .all_logos{
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        text-align: center;
+    }
+    .all_products{
+        grid-template-columns: repeat(2, 1fr);
+        grid: gap 1.5em;;
+    }
+    .hero_img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero_img > img{
+        width: 285px;
+        height: 250px; 
+        object-fit: cover;
+    }
+}
